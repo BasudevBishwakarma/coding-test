@@ -1,0 +1,15 @@
+/* global.css */
+body {
+    scroll-behavior: smooth;
+    background: #f9f7f3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 4px;
+}

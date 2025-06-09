@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compatto</title>
+    <link rel="stylesheet" href="../assets/css/tailwind-output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section>
+        <!-- Navbar -->
+        <div class="w-full">
+            <!-- Web Menu -->
+            <div
+                class="flex justify-between items-center w-[70vw] px-[60px] py-[20px] rounded-[100px] bg-[#FFFFFF] absolute left-1/2 -translate-x-1/2 top-[26px] z-10 lg:w-full lg:relative lg:rounded-none lg:top-0 sm:hidden">
+                <div>
+                    <img src="./../assets/image/compatto-logo.svg" alt="compatto-logo">
+                </div>
+                <div>
+                    <ul class="flex justify-between gap-10 md:gap-5">
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Who we are
+                        </li>
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Our Services
+                        </li>
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Why choose us
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button
+                        class="text-white cursor-pointer border rounded px-8 py-3 bg-[#9b795b] border-[#9b795b] transition-transform duration-200 hover:bg-[#a88a67] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_#9b795b] active:translate-x-0 active:translate-y-0 active:shadow-none">
+                        Contact Us
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                class="hidden sm:flex justify-between items-center flex-col w-[70vw] px-[60px] py-[20px] rounded-[100px] bg-[#FFFFFF] absolute left-1/2 -translate-x-1/2 top-[26px] z-10 lg:w-full lg:relative lg:rounded-none lg:top-0 xs:px-[10px]">
+
+                <div class="w-full flex justify-between items-center">
+                    <img src="./../assets/image/compatto-logo.svg" alt="compatto-logo">
+                    <div class="text-[40px]" onclick="handleMenuToggle()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <!-- Menu Content -->
+                <div id="menuContentId"
+                    class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex flex-col items-center gap-5">
+                    <ul class="flex flex-col justify-between gap-10 md:gap-5">
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Who we are
+                        </li>
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Our Services
+                        </li>
+                        <li
+                            class="hover:text-[#9b795b] cursor-pointer hover:border-b-[2px] hover:border-[#9b795b] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                            Why choose us
+                        </li>
+                    </ul>
+                    <div>
+                        <button
+                            class="text-white cursor-pointer border rounded px-8 py-3 bg-[#9b795b] border-[#9b795b] transition-transform duration-200 hover:bg-[#a88a67] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_#9b795b] active:translate-x-0 active:translate-y-0 active:shadow-none">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- landing  -->
+        <div>
+            <div
+                class="relative rounded-[42px] mx-[60px] my-[70px] h-[80vh] bg-[url(./../../assets/image/headerImg.jpg)] bg-cover bg-center xs:mx-[10px]">
+                <div class="absolute inset-0 bg-black opacity-30 rounded-[42px] z-0"></div>
+                <div
+                    class="absolute bottom-5 left-1/2 -translate-x-1/2 text-center text-white flex justify-between w-full md:flex-col ">
+                    <div
+                        class="flex flex-col text-[62px] font-medium leading-tight text-left ml-[60px] mb-[80px] md:mb-[30px] sm:text-[40px] xs:ml-[20px]">
+                        <p>Bringing <span class="text-[#e0d8c8]">Simplicity</span></p>
+                        <p>In The Furnishing Market</p>
+                    </div>
+                    <div class="max-w-[450px] text-base text-left leading-relaxed mr-[60px] md:ml-[60px] xs:ml-[20px]">
+                        <p class="mb-6 text-[20px]  sm:text-[16px]">
+                            Compatto simplifies the complex process of furnishing all-inclusive,
+                            boutique & high-end hotels, and luxury residences in Greece.
+                        </p>
+
+                        <button
+                            class="relative h-[50px] w-[400px] overflow-hidden border-2 border-[#9b795b] text-[#9b795b] rounded-xl transition-all duration-500 ease-in-out hover:shadow-[1px_1px_200px_#9b795b] hover:text-white hover:border-none group bg-[#FFFFFF] sm:w-auto sm:px-5">
+                            <span class="z-10 font-semibold tracking-[4px] relative">Start <span class="sm:hidden"> Your
+                                    Furnishing
+                                    Journey</span></span>
+                            <span
+                                class="type1-after absolute left-0 top-0 h-[10px] w-[10px] bg-[#9b795b] rounded-full z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-[100] group-hover:translate-x-[2px] group-hover:visible"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="px-[150px] mb-[80px] lg:px-[80px] xs:px-[10px]">
+        <div class="w-full flex items-center justify-between gap-5 md:flex-col">
+            <div
+                class="relative w-[30vw] h-[400px] rounded-xl bg-[#a88a67] p-6 flex flex-col justify-between overflow-hidden md:w-full">
+                <!-- Bottom-right dark overlay -->
+                <div
+                    class="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-black/40 to-transparent z-0 pointer-events-none rounded-xl">
+                </div>
+
+                <!-- Content Layer -->
+                <div class="relative z-10 flex justify-between">
+                    <p class="text-[14px] font-medium text-white">
+                        OUR COMPANY <br />IN NUMBER
+                    </p>
+                    <img src="./../assets/image/compatto-icon.svg" alt="" class="w-[100px]" />
+                </div>
+
+                <div class="relative z-10 flex justify-between items-end">
+                    <div class="text-white">
+                        <p class="text-[70px]">150 +</p>
+                        <p class="text-[19px]">Furniture Suppliers</p>
+                    </div>
+                    <div class="text-white">
+                        <p class="text-[32px]">15+</p>
+                        <p class="text-[14px]">Years of Industry <br />Experience</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-[68vw] h-[400px] bg-[#efebe2] rounded-xl flex md:w-full">
+                <div class="w-[50%] p-[45px] flex flex-col gap-5 lg:w-full">
+                    <p class="text-[40px]">Who <span class="text-[#A88A67]">We</span> Are</p>
+                    <p>At Compatto, we understand the challenges of creating exceptional spaces that blend elegance,
+                        quality, and
+                        functionality.
+                        <br>
+                        <br>
+                        As Greece’s premier furniture solutions provider, we’ve made it our mission to simplify the
+                        furnishing process, ensuring
+                        that every project is executed flawlessly from initial consultation to final installation.
+                    </p>
+                </div>
+                <div class="w-[50%] h-[400px] lg:hidden">
+                    <img src="./../assets/image/who-we-are.jpg" alt="" class="w-full h-full object-cover rounded-xl" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    let menuOpen = false;
+
+    function handleMenuToggle() {
+        const menu = document.getElementById('menuContentId');
+        if (menuOpen) {
+            menu.classList.remove('max-h-[500px]');
+            menu.classList.add('max-h-0');
+        } else {
+            menu.classList.remove('max-h-0');
+            menu.classList.add('max-h-[500px]');
+        }
+        menuOpen = !menuOpen;
+    }
+</script>
+
+</html>
