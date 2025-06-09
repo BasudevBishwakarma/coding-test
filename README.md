@@ -4,16 +4,18 @@ A minimal HTML + Tailwind CSS website landing page using Tailwind CLI and PostCS
 
 ## 📁 Structure
 
-compatto/
-├── app/index.html
-├── assets/css/
-│ ├── tailwind.css
-│ ├── tailwind-output.css (generated)
-│ ├── global.css
-│ └── fonts.css
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
+ **compatto/**
+  - **app/**
+    - `index.html`
+  - **assets/**
+    - **css/**
+      - `tailwind.css` – Tailwind input file with `@tailwind` directives
+      - `tailwind-output.css` – Generated file (don't edit manually)
+      - `global.css` – Custom global styles
+      - `fonts.css` – Font-face declarations
+  - `tailwind.config.js`
+  - `postcss.config.js`
+  - `package.json`
 
 ## ⚙️ Setup
 
